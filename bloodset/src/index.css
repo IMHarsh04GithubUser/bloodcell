@@ -13,3 +13,18 @@ html {
 body {
   -ms-overflow-style: none;
 }
+
+.scale1{
+  animation: scaleAnimation 5s ease-in-out infinite;
+
+}
+
+@keyframes scaleAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
