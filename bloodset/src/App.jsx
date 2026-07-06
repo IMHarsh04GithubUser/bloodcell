@@ -28,9 +28,9 @@ function App() {
 
     try {
       setLoading(true);
-      const apiBase = import.meta.env.VITE_API_URL || "";
+      
 
-      const res = await axios.post(`${apiBase}/predict`, formData);
+      const res = await axios.post(`http://localhost:5000/predict`, formData);
 
       setResult(res.data.prediction.toLowerCase());
     } catch (err) {
